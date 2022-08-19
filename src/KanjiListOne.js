@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
+import { useHistory } from "react-router-dom";
 
 const KanjiListOne = () => {
     const [data, setData] = useState(null)
+    const history = useHistory()
 
 
    useEffect(() => {
@@ -13,7 +15,8 @@ const KanjiListOne = () => {
     
     return ( 
         <div className="kanji-list-one">
-            <p>{ data }</p>       
+            <p>{ data }</p>
+              
         </div>
      );
 }

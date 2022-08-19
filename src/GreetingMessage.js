@@ -1,17 +1,17 @@
-import { Link } from "react-router-dom";
+import {  useHistory } from "react-router-dom";
 
 const GreetingMessage = () => {
-    const linkStyle = {
-        margin: '1rem',
-        textDecoration: 'none',
-        color: '#237699'
-    }
+
+
+    const history = useHistory()
+
     
     return ( 
     <div className="greeting-message">
         <h2>Welcome!</h2>
-        <p>Press Start to learn</p>
-        <Link to='/home' style={linkStyle}>Start</Link>
+        <p>Press Start To Begin</p>
+       
+        <button onClick={() => history.push('/home')}>Start</button>
     </div>
      );
 }
