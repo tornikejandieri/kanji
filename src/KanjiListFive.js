@@ -1,15 +1,25 @@
-import { useEffect, useState } from "react";
+import { useCallback, useState } from "react";
 
 const KanjiListFive = () => {
     const [data, setData] = useState(null)
-    useEffect(() => {
+
+    const handleClick = () => {
+        fetchRequest()
+    }
+
+    
+    const fetchRequest = useCallback(() => {
         fetch('https://kanjiapi.dev/v1/kanji/grade-5')
-        .then(res => res.json())
-        .then(data => setData(data))
-        }, [])
+        .then(resp => resp.json()) 
+        .then(data => setData(data[Math.floor(Math.random()*data.length)]))
+    }, [handleClick])
+
+
+    
     return ( 
         <div className="kanji-list-five">
             <p>{ data }</p>
+            <button onClick={handleClick}>👀</button>
         </div>
      );
 }
