@@ -6,7 +6,7 @@ const KanjiListTwo = () => {
         fetch('https://kanjiapi.dev/v1/kanji/grade-2')
         .then(res => res.json())
         .then(data => setData(data))
-    })
+    }, [])
 
     return ( 
         <div className="kanji-list-two">

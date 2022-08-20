@@ -4,7 +4,7 @@ const Home = () => {
     const history = useHistory()
 
     const linkStyles = {
-        color: 'pink',
+        color: '#f57373',
         padding: '20px',
         textDecoration: 'none',
         fontWeight: 'bold',
@@ -18,15 +18,21 @@ const Home = () => {
             <div className="link">
                 <Link to={'/'} style={linkStyles}>Back to Start</Link>
                 <p>or</p>
-                <h4>Choose your level below</h4>
+                <h4>Choose a grade below</h4>
             </div>
             
-            <button onClick={() => history.push('/firstgrade')}>Grade 1</button>
-            <button onClick={() => history.push('/secondgrade')}>Grade 2</button>
-            <button onClick={() => history.push('/thirdgrade')}>Grade 3</button>
-            <button onClick={() => history.push('/fourthgrade')}>Grade 4</button>
-            <button onClick={() => history.push('/gradefive')}>Grade 5</button>
-            <button onClick={() => history.push('/sixthgrade')}>Grade 6</button>
+            <button onClick={() => history.push('/firstgrade')}>Grade 1
+            <p>(beginner)</p></button>
+            <button onClick={() => history.push('/secondgrade')}>Grade 2
+            <p>(beginner)</p></button>
+            <button onClick={() => history.push('/thirdgrade')}>Grade 3
+            <p>(intermediate)</p></button>
+            <button onClick={() => history.push('/fourthgrade')}>Grade 4
+            <p>(intermediate)</p></button>
+            <button onClick={() => history.push('/gradefive')}>Grade 5
+            <p>(advanced)</p></button>
+            <button onClick={() => history.push('/sixthgrade')}>Grade 6
+            <p>(advanced)</p></button>
             
         </div>
      );
