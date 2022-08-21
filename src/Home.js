@@ -16,22 +16,22 @@ const Home = () => {
     return ( 
         <div className="home-page">
             <div className="link">
-                <Link to={'/'} style={linkStyles}>Back to Start</Link>
+                <Link to={'/'} style={linkStyles}>(¯´•._.•Back to Start •._.•´¯)</Link>
                 <p>or</p>
-                <h4>Choose a grade below</h4>
+                <h4>Choose a level below</h4>
             </div>
             
-            <button onClick={() => history.push('/firstgrade')}>Grade 1
+            <button className="beginner" onClick={() => history.push('/firstgrade')}>Level 1
             <p>(beginner)</p></button>
-            <button onClick={() => history.push('/secondgrade')}>Grade 2
+            <button className="beginner" onClick={() => history.push('/secondgrade')}>Level 2
             <p>(beginner)</p></button>
-            <button onClick={() => history.push('/thirdgrade')}>Grade 3
+            <button className="intermediate" onClick={() => history.push('/thirdgrade')}>Level 3
             <p>(intermediate)</p></button>
-            <button onClick={() => history.push('/fourthgrade')}>Grade 4
+            <button className="intermediate" onClick={() => history.push('/fourthgrade')}>Level 4
             <p>(intermediate)</p></button>
-            <button onClick={() => history.push('/gradefive')}>Grade 5
+            <button className="advanced" onClick={() => history.push('/gradefive')}>Level 5
             <p>(advanced)</p></button>
-            <button onClick={() => history.push('/sixthgrade')}>Grade 6
+            <button className="advanced" onClick={() => history.push('/sixthgrade')}>Level 6
             <p>(advanced)</p></button>
             
         </div>

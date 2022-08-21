@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: sans-serif;
 }
 
 .greeting-message h2{
@@ -45,7 +45,7 @@
   flex-wrap: wrap;
 }
 
-.home-page button{
+.beginner{
   background-color: transparent;
   border: solid 8px rgb(247, 157, 228);
   border-radius: 15px;
@@ -62,6 +62,34 @@
   font-weight: bolder;
   cursor: pointer;
 }
+
+.intermediate{
+  background-color: transparent;
+  border: solid 8px rgb(64, 56, 216);
+  border-radius: 15px;
+  aspect-ratio: 2 / 3;
+  width: 200px;
+  margin: 50px;
+  color: #333;
+  font-size: 30px;
+}
+button.intermediate:hover{
+  border: solid 8px rgb(247, 234, 57);
+}
+
+.advanced{
+  background-color: transparent;
+  border: solid 8px rgb(244, 140, 21);
+  border-radius: 15px;
+  aspect-ratio: 2 / 3;
+  width: 200px;
+  margin: 50px;
+  color: #333;
+  font-size: 30px;
+}
+button.advanced:hover{
+    border: solid 8px rgb(38, 216, 235);
+  }
 
 .home-page p{
   color: #555;
@@ -163,7 +191,7 @@
 }
 
 .kanji-list-three p{
-  border: solid pink 4px;
+  border: solid rgb(64, 56, 216) 4px;
   border-radius: 12px;
   aspect-ratio: 2 / 3;
   width: 150px;
@@ -180,7 +208,7 @@
   border-radius: 5px;
   aspect-ratio: 16 / 9;
   padding: 20px;
-  background-color: rgb(166, 228, 73);
+  background-color:  rgb(247, 234, 57);
   cursor: pointer;
 }
 
@@ -193,7 +221,7 @@
 }
 
 .kanji-list-four p{
-  border: solid pink 4px;
+  border: solid rgb(64, 56, 216) 4px;
   border-radius: 12px;
   aspect-ratio: 2 / 3;
   width: 150px;
@@ -210,7 +238,7 @@
   border-radius: 5px;
   aspect-ratio: 16 / 9;
   padding: 20px;
-  background-color: rgb(166, 228, 73);
+  background-color:  rgb(247, 234, 57);
   cursor: pointer;
 }
 
@@ -223,7 +251,7 @@
 }
 
 .kanji-list-five p{
-  border: solid pink 4px;
+  border: solid rgb(244, 140, 21) 4px;
   border-radius: 12px;
   aspect-ratio: 2 / 3;
   width: 150px;
@@ -240,7 +268,7 @@
   border-radius: 5px;
   aspect-ratio: 16 / 9;
   padding: 20px;
-  background-color: rgb(166, 228, 73);
+  background-color: rgb(38, 216, 235);
   cursor: pointer;
 }
 
@@ -254,7 +282,7 @@
 }
 
 .kanji-list-six p{
-  border: solid pink 4px;
+  border: solid rgb(244, 140, 21) 4px;
   border-radius: 12px;
   aspect-ratio: 2 / 3;
   width: 150px;
@@ -271,12 +299,17 @@
   border-radius: 5px;
   aspect-ratio: 16 / 9;
   padding: 20px;
-  background-color: rgb(166, 228, 73);
+  background-color:rgb(38, 216, 235);
   cursor: pointer;
 }
 
 @media only screen and (max-width: 600px){
-  .home-page button{
+  *{
+    background-color: #fff;
+  }
+
+
+  .beginner{
     background-color: transparent;
     border: solid 4px rgb(247, 157, 228);
     border-radius: 15px;
@@ -285,6 +318,38 @@
     margin: 50px;
     color: #333;
     font-size: 30px;
+  }
+  button.beginner:hover{
+    border: solid 5px rgb(166, 228, 73);
+  }
+  
+  
+  .intermediate{
+    background-color: transparent;
+    border: solid 4px rgb(64, 56, 216);
+    border-radius: 15px;
+    aspect-ratio: 16 / 9;
+    width: 220px;
+    margin: 50px;
+    color: #333;
+    font-size: 30px;
+  }
+  button.intermediate:hover{
+    border: solid 5px rgb(247, 234, 57);
+  }
+  
+  .advanced{
+    background-color: transparent;
+    border: solid 4px rgb(244, 140, 21);
+    border-radius: 15px;
+    aspect-ratio: 16 / 9;
+    width: 220px;
+    margin: 50px;
+    color: #333;
+    font-size: 30px;
+  }
+  button.advanced:hover{
+    border: solid 5px rgb(38, 216, 235);
   }
 }
 
